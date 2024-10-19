@@ -92,6 +92,8 @@ html {
     --main-white: hsl(0, 0%, 100%);
     --main-chef-after-bg: url(../images/team-shape.svg);
     --contact-method-bg: #eee;
+        --svg-color : #fff;
+
 
 }
 
@@ -106,6 +108,8 @@ html {
     --main-white: hsl(0, 0%, 20%);
     --main-chef-after-bg: url(../images/team-shape-dark.svg);
     --contact-method-bg: #000;
+        --svg-color : #000;
+
 }
 
 .light i {
@@ -565,17 +569,7 @@ ul {
     position: relative;
 }
 
-.chef .chef-pic::after {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    right: 0;
-    background-image: var(--main-chef-after-bg);
-    width: 100%;
-    height: 72px;
-    /* background-repeat: ; */
-}
+
 
 .chef .chef-pic .icons {
     position: absolute;
@@ -641,7 +635,15 @@ ul {
     font-size: 15px;
     font-style: italic;
 }
+.chef-pic svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.chef-pic svg path {
+    fill: var(--svg-color);
 
+}
 
 
 /* end  of chefs section */
